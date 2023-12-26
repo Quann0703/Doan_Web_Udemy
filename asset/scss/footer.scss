@@ -1,0 +1,142 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.footer {
+  font-family: $font-stack-text;
+  margin-top: 100px;
+  background-color: #181821;
+  color: #a9b3bb;
+  overflow: hidden;
+  //   padding: 68px 0 40px;
+  .footer__section {
+    background: #1c1d1f;
+    border-top: 1px solid #3e4143;
+    color: $white-color;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  .teach__on-Udemy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer__text-on-Teach-banner {
+      @include ud-heading-lg;
+    }
+    .footer__teach-on-udemy-subtitle {
+      @include ud-text-md;
+      padding-top: 0.8rem;
+    }
+    .footer__text-on-Teach-banner-btn {
+      padding: 0 0 0 0.8rem;
+      .banner-btn-link {
+        @include ud-heading-md;
+        @include ud_btn;
+        @include ud-btn-white-outline;
+        height: 4.8rem;
+        color: $white-color;
+      }
+    }
+  }
+  .footer__notice-business {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem 0;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    .footer__text-notice-business {
+      @include ud-heading-lg;
+      flex: 1;
+      padding: 1.2rem 2.4rem 1.2rem 0;
+      .business__link {
+        color: #cec0fc;
+      }
+      &:hover .business__link {
+        color: #cec0fc;
+        text-decoration: underline;
+      }
+    }
+    .business__logo {
+      img {
+        margin: 1.2rem 0;
+        vertical-align: middle;
+      }
+      img:not(:last-child) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+  .footer__section-main {
+    background: #1c1d1f;
+    border-top: 1px solid #3e4143;
+    color: #fff;
+    .links-and-language-selector {
+      display: flex;
+      .language__selector-container {
+        padding: 0 0 2.4rem;
+        order: 1;
+        flex-shrink: 0;
+        margin-left: auto;
+        .btn-language {
+          @include ud_btn;
+          @include ud-heading-md;
+          @include ud-btn-secondary;
+          height: 4rem;
+          justify-content: flex-start;
+          padding: 0 1.6rem;
+          min-width: 14rem;
+          border-color: #fff;
+          color: #fff;
+          .languege-text {
+            margin-left: 10px;
+          }
+        }
+      }
+      .link__colum {
+        @include ud-unstyled-list;
+        flex-basis: 25.6rem;
+        margin-right: 1.6rem;
+        margin-bottom: 0;
+        li {
+          padding-left: 0;
+          .footer__Udemy-link {
+            @include ud-text-sm;
+            color: $white-color;
+          }
+          &:hover .footer__Udemy-link {
+            color: $white-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .logo-and-copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6.4rem 0 3.2rem;
+      .logo__container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        .logo__link {
+          @include ud_btn;
+          @include ud-btn-link;
+          @include ud-heading-md;
+          img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+          }
+        }
+      }
+      .copyright__container {
+        @include ud-text-xs;
+        padding: 0;
+      }
+    }
+  }
+}

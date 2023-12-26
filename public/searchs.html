@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="/asset/css/grid.css" />
+    <link rel="stylesheet" href="/asset/css/base.css    " />
+    <link rel="stylesheet" href="/asset/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body ng-app="Udemy" ng-controller="ContainerCtrl">
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <div class="row">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="../asset/img/Logo/logo-udemy.svg" alt="" />
+              </a>
+            </div>
+            <div class="hd__category">
+              <div class="category">
+                <h5>Thể Loại</h5>
+                <ul class="sub-category">
+                  <li>
+                    <a href="">Phát Triển</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Phát Triển Web</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Javascript</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">React js</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Angular</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">css</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Redux Framework</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Khoa Học Dữ Liệu</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Python</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Học Máy</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Học Sâu</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Trí Tuệ nhân tạo</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phân Tích dữ liệu</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Phát Triển Ứng Dụng Di Động</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Google Flutter</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển IOS</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển Android</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Swift</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển ứng dụng</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Ngôn Ngữ Lập Trình</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Javascript</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">React js</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Angular</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">css</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Redux Framework</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Phát Triển Trò Chơi</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Thiết Kế & Phát Triển CSDL</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Kiểm Tra Phần Mềm</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Kỹ Thuật Phần Mềm</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Công Cụ Phát Triển Phần Mềm</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Viết Phần Mềm Không Biết Code</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Kinh Doanh</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Tinh Thần Khởi Nghiệp</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Javascript</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">React js</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Angular</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">css</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Redux Framework</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Giao Tiếp</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Google Flutter</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển IOS</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển Android</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Swift</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển ứng dụng</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Quản Lý</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Bán Hàng </a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Chiến Lược Kinh Doanh</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Hoạt Động</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Quản Lý Dự Án</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Luật Doanh Nghiệp</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">BI Phân Tích KD</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Nhân Sự</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Ngành Công Nghiệp</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Tài Chính & Kế Toán</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Kế Toán Và Ghi Sổ Kế Toán</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">menu 2.1.1.1</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.2.2</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.3.3</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.4.4</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Tuân Thủ</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Tiền Ảo</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Kinh Tế Học</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Tài Chính</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Luyện Thi và Lấy Chứng Chỉ</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Xây Dựng & PT Mô Hình TC</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Đầu Tự Và Giao Dịch</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Công Cụ Quản lý Tiền</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Thuế</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Tài Chính & Kế Toán Khác</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">CNTT & Phần Mềm</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Chứng chỉ</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">menu 2.1.1.1</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.2.2</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.3.3</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.4.4</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Mạng & Bảo Mật</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Phần Cứng</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Hệ Điều Hành & Máy Chủ</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">CNTT & Phần Mềm Khác</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Làm Việc Với Office</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Microsoft</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">menu 2.1.1.1</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.2.2</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.3.3</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.4.4</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Apple</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Google</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">SAP</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Oracle</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Năng suất Làm Việc Office</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Phát Triển Cá Nhân</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Chuyển Hóa Bản Thân</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">Đào tạo huấn luyên đính hướng</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Lập trình tư duy</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Phát triển cá nhân</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Liệu pháp âm thanh </a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Chánh niệm</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Mục Đích sống</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Huấn luyện</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">Trí tuệ cảm xúc</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Năng Suất Cá Nhân</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Năng Suất Lãnh Đạo</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Phát Triển Sự Nghiệp</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Làm Cha Mẹ & Mối quan hệ</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Tôn Giáo & Tâm Linh</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Khả năng sáng tạo</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Gây Ảnh Hưởng</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Quản lý stress</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Thiết Kế</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                    <ul class="sub3-category">
+                      <li>
+                        <a href="">Microsoft</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                        <ul class="sub3-category">
+                          <li>
+                            <a href="">menu 2.1.1.1</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.2.2</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.3.3</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                          <li>
+                            <a href="">menu 2.1.4.4</a>
+                            <span
+                              class="fa-solid fa-angle-right seach__icon"
+                            ></span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="">Apple</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Google</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">SAP</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Oracle</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                      <li>
+                        <a href="">Năng suất Làm Việc Office</a>
+                        <span
+                          class="fa-solid fa-angle-right seach__icon"
+                        ></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Maketing</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                  </li>
+                  <li>
+                    <a href="">Sức Khỏe & Thể Dục</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                  </li>
+                  <li>
+                    <a href="">Âm Nhạc</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                  </li>
+                  <li>
+                    <a href="">Giảng Dạy Và Học Thuật</a>
+                    <span class="fa-solid fa-angle-right seach__icon"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="seach">
+              <form action="" class="seach__form">
+                <button type="submit" class="seach__press">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- <input type="hidden" name="src" value="ukw" /> -->
+                <input
+                  class="seach__input-text"
+                  type="text"
+                  placeholder="Tìm Kiếm nội dung bất kỳ"
+                />
+              </form>
+            </div>
+            <div class="hd__business-udemy features">
+              <a class="none_dicoration" href="">Udemy Business</a>
+              <div class="business__wrap">
+                <div class="business">
+                  <div class="business-titile">
+                    <h2>
+                      Cho Phép Nhóm Của Bạn Truy Vào Hơn 22.000 Khóa Học Hàng
+                      Đầu Của Udemy,Ở Mọi Lúc Mọi Nơi Và Mọi Lúc
+                    </h2>
+                  </div>
+                  <div class="business-button">
+                    <a href="">Dùng Thử Udemy Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hd__teching-udemy features">
+              <a class="none_dicoration" href="">Giảng dạy trên Udemy</a>
+              <div class="teching__wrap">
+                <div class="teching">
+                  <div class="teching-titile">
+                    <h2>
+                      Kiến Thức Của Bạn Thành Cơ Hội Và Tiếp Cận với Hàng Triệu
+                      Người Trên Thế Giới
+                    </h2>
+                  </div>
+                  <div class="teching-button">
+                    <a href="">Tìm Hiểu Thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hd__process-udemy features">
+              <a class="none_dicoration" href="">Quá trình học tập của tôi</a>
+              <div class="process__wrap">
+                <div class="process">
+                  <div class="process__bought">
+                    <div class="process__bought-img">
+                      <img src="./asset/img/Course/1362070_b9a1_2.jpg" alt="" />
+                    </div>
+                    <div class="process__bought-titile">
+                      <h3>
+                        React - The Complete Guide 2023 (incl.React Router &
+                        Redux)
+                      </h3>
+                      <div class="process__bought-present"></div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="process__btn">
+                    <a href="">Chuyển Đến Quá trình Học Tập Của Tôi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hd_action-icon">
+              <div class="hd__heart icon">
+                <a href="">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+                <div class="heart__warp">
+                  <div class="heart">
+                    <div class="heart__like">
+                      <div class="heart__like-img">
+                        <img
+                          src="./asset/img/Course/1362070_b9a1_2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart__like-titile">
+                        <h3>
+                          React - The Complete Guide 2023 (incl.React Router &
+                          Redux)
+                        </h3>
+                        <p>Jonas Schmedtmann</p>
+                        <h4>đ 429.000</h4>
+                      </div>
+                    </div>
+                    <div class="heart__btn">
+                      <a href="">Chuyển Đến Quá trình Học Tập Của Tôi</a>
+                    </div>
+                    <hr />
+                    <div class="heart__btn-dream">
+                      <a href="">Chuyển Đến Quá trình Học Tập Của Tôi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hd__shop icon">
+                <a href="">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="shop__warp">
+                  <div class="shop">
+                    <div ng-repeat="x in cartItems" class="shop__like">
+                      <div class="shop__like-img">
+                        <img
+                          src="./asset/img/Course/1362070_b9a1_2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="shop__like-titile">
+                        <h3>
+                          <!-- React - The Complete Guide 2023 (incl.React Router &
+                          Redux) -->
+                          {{x.title}}
+                        </h3>
+                        <p>{{x.tcname}}</p>
+                        <h4>{{x.feecoures}}</h4>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="btn__shop-total">
+                      <div class="shop__total-chrage">
+                        <h2>Tổng: đ 7.000.000</h2>
+                      </div>
+                      <div class="shop__btn">
+                        <a href="./cart.html">Chuyển Đến Giỏ hàng của tôi</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hd__bell icon">
+                <a href="">
+                  <i class="fa-regular fa-bell"></i>
+                </a>
+                <div class="bell__warp">
+                  <div class="bell">
+                    <div class="bell__header">
+                      <h6 class="notification__bell">Thông Báo</h6>
+                      <button class="bell__setting">Cài Đặt</button>
+                    </div>
+                    <div class="bell__list-notification">
+                      <div class="bell__no-notifi">
+                        <!-- <h2>Không có thông báo nào</h2> -->
+                        <div class="notifi__content">
+                          <div class="notifi__list notifi__noseem">
+                            <div class="notifiAvatar">
+                              <div class="fallBack__wrapper">
+                                <img src="./asset/img/Logo/images.png" alt="" />
+                              </div>
+                            </div>
+                            <div class="notifi__meassage">
+                              <div class="notifi__meassage-text">
+                                Bài học
+                                <strong
+                                  >Tối ưu perfomance hình ảnh với srcset</strong
+                                >
+                                mới được thêm vào.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hd__login">
+              <div class="login">
+                <h5>TQ</h5>
+              </div>
+              <div class="sub_login_wrap">
+                <div class="sub_user-menu">
+                  <div class="user-info">
+                    <div class="user__login-img">
+                      <h5>TQ</h5>
+                    </div>
+                    <div class="user__info-text">
+                      <h3>Trần Văn Quân</h3>
+                      <p>tranvanquan0711200@gmail...</p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="user-Shared">
+                    <ul class="list__shared">
+                      <li>
+                        <a href="">Quá trình học tập</a>
+                      </li>
+                      <li>
+                        <a href="">Giỏ hàng của tôi</a>
+                      </li>
+                      <li>
+                        <a href="">Danh sách mong ước</a>
+                      </li>
+                      <li>
+                        <a href="">Giảng dạy trên Udemy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr />
+                  <div class="user-notification">
+                    <div class="notification">
+                      <a href="">Thông Báo</a>
+                    </div>
+                    <div class="messeage">
+                      <a href="">Tin Nhắn</a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="user-setting">
+                    <ul class="list__setting">
+                      <li>
+                        <a href="">Cài đặt tài khoản</a>
+                      </li>
+                      <li>
+                        <a href="">Phương thức thanh toán</a>
+                      </li>
+                      <li>
+                        <a href="">Thuê bao</a>
+                      </li>
+                      <li>
+                        <a href="">ưu đãi trên Udemy</a>
+                      </li>
+                      <li>
+                        <a href="">Lịch sử mua</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr />
+                  <div class="user-language">
+                    <div class="language">
+                      <a href=""> Ngôn Ngữ </a>
+                      <h5>Tiếng việt</h5>
+                      <span><i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="user-login">
+                    <div class="login-help">
+                      <a href="">Trợ Giúp </a>
+                    </div>
+                    <div class="login-sign-in">
+                      <a href=""> Đăng suất </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="grid wide">
+          <div class="container__wrap">
+            <div class="search__header-container">
+              <h1 class="search__title">5 Kết quả trả về</h1>
+            </div>
+            <div class="component__magin">
+              <div class="row list__course">
+                <div class="col l-2-4 course__index">
+                  <div data-id="Jonas Schmedtmann" class="course__item-wrap">
+                    <a
+                      href="/coursedetails.html?id={{x.courseID}}"
+                      class="detail__link"
+                    >
+                      <div href="" class="course__item-img">
+                        <img
+                          class="item-img"
+                          src="https://img-b.udemycdn.com/course/240x135/5620946_7c11.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="course__item-item">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <p class="course__item-teacher">
+                        Maximilian Schwarzmüller
+                      </p>
+                      <div class="course__item-price-text">
+                        <div class="course__item-price-text-cost">
+                          <span class="course__item-price-text-persent"
+                            >Giá hiện tại</span
+                          ><span><span> ₫&nbsp;1.099.000 </span></span>
+                        </div>
+                        <div class="course__item-price-text">
+                          <div class="course__item-price-text-cost">
+                            <span class="course__item-price-text-persent"
+                              >Giá gốc</span
+                            >
+                            <span>
+                              <s>
+                                <span
+                                  class="course__item-price-text-persent-fee"
+                                  >₫&nbsp;2.399.000
+                                </span>
+                              </s>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="course__detail-hover-wrrap">
+                    <div class="course__detail-hover">
+                      <h3 class="course__title-detail">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <div class="detailcourse__courseRating-enrollmeant">
+                        <div class="elementItem">
+                          <div class="course__badges-bestseller">
+                            Bán chạy nhất
+                          </div>
+                        </div>
+                        <div class="elementItem row">
+                          <a href="" class="style__ratings-wapper">
+                            <span class="star__ratings-number rating-magin"
+                              >4,8</span
+                            >
+                            <div class="list__star-ratings rating-magin">
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                            </div>
+                            <span class="course-rank">(5880 xếp hạng)</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="buy__box-item buy-box-add-to-cart-butonn-wapper"
+                      >
+                        <button data-id="1" class="add-to-cart-butom">
+                          Thêm vào giỏ hàng
+                        </button>
+
+                        <button class="add-to-dream-button">
+                          <i class="fa-solid fa-heart heart-dream"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 course__index">
+                  <div data-id="Jonas Schmedtmann" class="course__item-wrap">
+                    <a
+                      href="/coursedetails.html?id={{x.courseID}}"
+                      class="detail__link"
+                    >
+                      <div href="" class="course__item-img">
+                        <img
+                          class="item-img"
+                          src="https://img-b.udemycdn.com/course/240x135/5620946_7c11.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="course__item-item">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <p class="course__item-teacher">
+                        Maximilian Schwarzmüller
+                      </p>
+                      <div class="course__item-price-text">
+                        <div class="course__item-price-text-cost">
+                          <span class="course__item-price-text-persent"
+                            >Giá hiện tại</span
+                          ><span><span> ₫&nbsp;1.099.000 </span></span>
+                        </div>
+                        <div class="course__item-price-text">
+                          <div class="course__item-price-text-cost">
+                            <span class="course__item-price-text-persent"
+                              >Giá gốc</span
+                            >
+                            <span>
+                              <s>
+                                <span
+                                  class="course__item-price-text-persent-fee"
+                                  >₫&nbsp;2.399.000
+                                </span>
+                              </s>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="course__detail-hover-wrrap">
+                    <div class="course__detail-hover">
+                      <h3 class="course__title-detail">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <div class="detailcourse__courseRating-enrollmeant">
+                        <div class="elementItem">
+                          <div class="course__badges-bestseller">
+                            Bán chạy nhất
+                          </div>
+                        </div>
+                        <div class="elementItem row">
+                          <a href="" class="style__ratings-wapper">
+                            <span class="star__ratings-number rating-magin"
+                              >4,8</span
+                            >
+                            <div class="list__star-ratings rating-magin">
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                            </div>
+                            <span class="course-rank">(5880 xếp hạng)</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="buy__box-item buy-box-add-to-cart-butonn-wapper"
+                      >
+                        <button data-id="1" class="add-to-cart-butom">
+                          Thêm vào giỏ hàng
+                        </button>
+
+                        <button class="add-to-dream-button">
+                          <i class="fa-solid fa-heart heart-dream"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 course__index">
+                  <div data-id="Jonas Schmedtmann" class="course__item-wrap">
+                    <a
+                      href="/coursedetails.html?id={{x.courseID}}"
+                      class="detail__link"
+                    >
+                      <div href="" class="course__item-img">
+                        <img
+                          class="item-img"
+                          src="https://img-b.udemycdn.com/course/240x135/5620946_7c11.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="course__item-item">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <p class="course__item-teacher">
+                        Maximilian Schwarzmüller
+                      </p>
+                      <div class="course__item-price-text">
+                        <div class="course__item-price-text-cost">
+                          <span class="course__item-price-text-persent"
+                            >Giá hiện tại</span
+                          ><span><span> ₫&nbsp;1.099.000 </span></span>
+                        </div>
+                        <div class="course__item-price-text">
+                          <div class="course__item-price-text-cost">
+                            <span class="course__item-price-text-persent"
+                              >Giá gốc</span
+                            >
+                            <span>
+                              <s>
+                                <span
+                                  class="course__item-price-text-persent-fee"
+                                  >₫&nbsp;2.399.000
+                                </span>
+                              </s>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="course__detail-hover-wrrap">
+                    <div class="course__detail-hover">
+                      <h3 class="course__title-detail">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <div class="detailcourse__courseRating-enrollmeant">
+                        <div class="elementItem">
+                          <div class="course__badges-bestseller">
+                            Bán chạy nhất
+                          </div>
+                        </div>
+                        <div class="elementItem row">
+                          <a href="" class="style__ratings-wapper">
+                            <span class="star__ratings-number rating-magin"
+                              >4,8</span
+                            >
+                            <div class="list__star-ratings rating-magin">
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                            </div>
+                            <span class="course-rank">(5880 xếp hạng)</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="buy__box-item buy-box-add-to-cart-butonn-wapper"
+                      >
+                        <button data-id="1" class="add-to-cart-butom">
+                          Thêm vào giỏ hàng
+                        </button>
+
+                        <button class="add-to-dream-button">
+                          <i class="fa-solid fa-heart heart-dream"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 course__index">
+                  <div data-id="Jonas Schmedtmann" class="course__item-wrap">
+                    <a
+                      href="/coursedetails.html?id={{x.courseID}}"
+                      class="detail__link"
+                    >
+                      <div href="" class="course__item-img">
+                        <img
+                          class="item-img"
+                          src="https://img-b.udemycdn.com/course/240x135/5620946_7c11.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="course__item-item">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <p class="course__item-teacher">
+                        Maximilian Schwarzmüller
+                      </p>
+                      <div class="course__item-price-text">
+                        <div class="course__item-price-text-cost">
+                          <span class="course__item-price-text-persent"
+                            >Giá hiện tại</span
+                          ><span><span> ₫&nbsp;1.099.000 </span></span>
+                        </div>
+                        <div class="course__item-price-text">
+                          <div class="course__item-price-text-cost">
+                            <span class="course__item-price-text-persent"
+                              >Giá gốc</span
+                            >
+                            <span>
+                              <s>
+                                <span
+                                  class="course__item-price-text-persent-fee"
+                                  >₫&nbsp;2.399.000
+                                </span>
+                              </s>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="course__detail-hover-wrrap">
+                    <div class="course__detail-hover">
+                      <h3 class="course__title-detail">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <div class="detailcourse__courseRating-enrollmeant">
+                        <div class="elementItem">
+                          <div class="course__badges-bestseller">
+                            Bán chạy nhất
+                          </div>
+                        </div>
+                        <div class="elementItem row">
+                          <a href="" class="style__ratings-wapper">
+                            <span class="star__ratings-number rating-magin"
+                              >4,8</span
+                            >
+                            <div class="list__star-ratings rating-magin">
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                            </div>
+                            <span class="course-rank">(5880 xếp hạng)</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="buy__box-item buy-box-add-to-cart-butonn-wapper"
+                      >
+                        <button data-id="1" class="add-to-cart-butom">
+                          Thêm vào giỏ hàng
+                        </button>
+
+                        <button class="add-to-dream-button">
+                          <i class="fa-solid fa-heart heart-dream"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 course__index">
+                  <div data-id="Jonas Schmedtmann" class="course__item-wrap">
+                    <a
+                      href="/coursedetails.html?id={{x.courseID}}"
+                      class="detail__link"
+                    >
+                      <div href="" class="course__item-img">
+                        <img
+                          class="item-img"
+                          src="https://img-b.udemycdn.com/course/240x135/5620946_7c11.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="course__item-item">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <p class="course__item-teacher">
+                        Maximilian Schwarzmüller
+                      </p>
+                      <div class="course__item-price-text">
+                        <div class="course__item-price-text-cost">
+                          <span class="course__item-price-text-persent"
+                            >Giá hiện tại</span
+                          ><span><span> ₫&nbsp;1.099.000 </span></span>
+                        </div>
+                        <div class="course__item-price-text">
+                          <div class="course__item-price-text-cost">
+                            <span class="course__item-price-text-persent"
+                              >Giá gốc</span
+                            >
+                            <span>
+                              <s>
+                                <span
+                                  class="course__item-price-text-persent-fee"
+                                  >₫&nbsp;2.399.000
+                                </span>
+                              </s>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="course__detail-hover-wrrap">
+                    <div class="course__detail-hover">
+                      <h3 class="course__title-detail">
+                        React & TypeScript - The Practical Guide
+                      </h3>
+                      <div class="detailcourse__courseRating-enrollmeant">
+                        <div class="elementItem">
+                          <div class="course__badges-bestseller">
+                            Bán chạy nhất
+                          </div>
+                        </div>
+                        <div class="elementItem row">
+                          <a href="" class="style__ratings-wapper">
+                            <span class="star__ratings-number rating-magin"
+                              >4,8</span
+                            >
+                            <div class="list__star-ratings rating-magin">
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                              <i
+                                class="fa-solid fa-star star__hover-detail"
+                                style="color: #f69c08"
+                              ></i>
+                            </div>
+                            <span class="course-rank">(5880 xếp hạng)</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="buy__box-item buy-box-add-to-cart-butonn-wapper"
+                      >
+                        <button data-id="1" class="add-to-cart-butom">
+                          Thêm vào giỏ hàng
+                        </button>
+
+                        <button class="add-to-dream-button">
+                          <i class="fa-solid fa-heart heart-dream"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-directory">
+              <nav class="pagilation__container">
+                <a href="" class="transitionTap pagilation-prev">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <div class="navigation">
+                  <a href="" class="pagilation-number">1</a>
+                </div>
+                <a href="" class="transitionTap pagilation-next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="grid">
+          <div class="footer__section teach__on-Udemy">
+            <div>
+              <div class="footer__text-on-Teach-banner">
+                Giảng dạy online cho cả thế giới
+              </div>
+              <div class="footer__teach-on-udemy-subtitle">
+                Tạo một khóa học video online, tiếp cận học viên trên toàn cầu
+                và kiếm tiền
+              </div>
+            </div>
+            <div class="footer__text-on-Teach-banner-btn">
+              <a href="" class="banner-btn-link">
+                <span>Giảng dạy trên Udemy</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__section footer__notice-business">
+            <div class="footer__text-notice-business">
+              <span
+                >Các công ty hàng đầu chọn
+                <a href="" class="business__link">Udemy Business</a> để xây dựng
+                kỹ năng nghề nghiệp có nhu cầu lớn.</span
+              >
+            </div>
+            <div class="business__logo">
+              <img
+                src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg"
+                alt="Nasdaq"
+                height="44"
+                width="115"
+                loading="lazy"
+              /><img
+                src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
+                alt="Volkswagen"
+                height="44"
+                width="44"
+                loading="lazy"
+              /><img
+                src="https://s.udemycdn.com/partner-logos/v4/box-light.svg"
+                alt="Box"
+                height="44"
+                width="67"
+                loading="lazy"
+              /><img
+                src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg"
+                alt="NetApp"
+                height="44"
+                width="115"
+                loading="lazy"
+              /><img
+                src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"
+                alt="Eventbrite"
+                height="44"
+                width="115"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="footer__section footer__section-main">
+            <div class="links-and-language-selector">
+              <div class="language__selector-container">
+                <button type="button" class="btn-language">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <span class="languege-text">Tiếng Việt</span>
+                </button>
+              </div>
+              <ul class="link__colum">
+                <li>
+                  <a
+                    href=""
+                    class="footer__Udemy-link"
+                    target="_blank"
+                    rel="noopener"
+                    >Udemy Business</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giảng dạy trên Udemy</a>
+                </li>
+                <li>
+                  <a
+                    class="footer__Udemy-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Tải ứng dụng</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giới thiệu</a>
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href=""
+                    >Hãy liên hệ với chúng tôi</a
+                  >
+                </li>
+              </ul>
+              <ul class="link__colum">
+                <li>
+                  <a
+                    href=""
+                    class="footer__Udemy-link"
+                    target="_blank"
+                    rel="noopener"
+                    >Udemy Business</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giảng dạy trên Udemy</a>
+                </li>
+                <li>
+                  <a
+                    class="footer__Udemy-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Tải ứng dụng</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giới thiệu</a>
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href=""
+                    >Hãy liên hệ với chúng tôi</a
+                  >
+                </li>
+              </ul>
+              <ul class="link__colum">
+                <li>
+                  <a
+                    href=""
+                    class="footer__Udemy-link"
+                    target="_blank"
+                    rel="noopener"
+                    >Udemy Business</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giảng dạy trên Udemy</a>
+                </li>
+                <li>
+                  <a
+                    class="footer__Udemy-link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Tải ứng dụng</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href="">Giới thiệu</a>
+                </li>
+                <li>
+                  <a class="footer__Udemy-link" href=""
+                    >Hãy liên hệ với chúng tôi</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="logo-and-copyright">
+              <div class="logo__container">
+                <a href="" class="logo__link">
+                  <img
+                    src="	https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg"
+                    alt="Udemy"
+                    width="91.07142857142857"
+                    height="34"
+                    loading="eager"
+                  />
+                </a>
+              </div>
+              <div class="copyright__container">© 2023 Udemy, Inc.</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

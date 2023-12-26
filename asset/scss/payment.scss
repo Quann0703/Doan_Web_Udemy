@@ -1,0 +1,338 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.heading__payment {
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+.btnCancel {
+  @include ud_btn;
+  @include ud-heading-sm;
+  @include ud-btn-ghost;
+  height: 4rem;
+  margin-top: 15px;
+}
+.main__content {
+  flex: 1 0 auto;
+  .maketplace__checkout {
+    @include linear_layout;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: -1;
+    .maketplace__checkout-main-content {
+      display: flex;
+      margin: 0 auto;
+      max-width: 98.4rem;
+      .check__out-overview {
+        margin: 0 auto;
+        padding: 0 4.8rem 0 2.4rem;
+        max-width: 60rem;
+        background: #fff;
+        min-width: 60rem;
+        .checkout__header {
+          @include ud-heading-serif-xxl;
+          margin: 3.2rem 0;
+        }
+        .billing__adress {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 3.2rem;
+          .billing__adress-title {
+            @include ud-heading-xl;
+            margin-bottom: 1.6rem;
+          }
+          .billing__adress-content {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0.8rem;
+            .billing__adress-element {
+              @include ud-form-group;
+              flex: 1;
+              max-width: 50%;
+              margin-right: 1.6rem;
+              .adress__title {
+                @include ud-form-label;
+                @include ud-heading-sm;
+                .label-tag {
+                  @include ud-text-xs;
+                  margin-left: 0.8rem;
+                  flex: 1;
+                  text-align: right;
+                  color: #6a6f73;
+                }
+              }
+              .select__adress {
+                position: relative;
+                .select__icon-left,
+                .select__icon-right {
+                  @include ud-select-icon-container;
+                }
+                .select__icon-left {
+                  left: 0;
+                  justify-content: flex-end;
+                }
+                .select__icon-right {
+                  right: 0;
+                }
+                .adress__select {
+                  @include ud-select;
+                  height: 4.8rem;
+                  padding-left: 4rem;
+                }
+              }
+            }
+          }
+          .billing__adress-term {
+            @include ud-text-xs;
+            color: #6a6f73;
+          }
+        }
+        .payment__methor-container {
+          margin-bottom: 4.8rem;
+          .payment__methor-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.6rem;
+            .payment__heading {
+              @include ud-heading-xl;
+            }
+            .payment__text {
+              @include ud-text-xs;
+              display: flex;
+              align-items: center;
+              color: #6a6f73;
+            }
+          }
+          .boder__bottom {
+            border-bottom: 2px solid #d1d7dc;
+          }
+          .payment__content {
+            border-top: 2px solid #d1d7dc;
+            .panel__wrap {
+              border-left: 1px solid #d1d7dc;
+              border-right: 1px solid #d1d7dc;
+              .acdotion__module {
+                @include ud_btn;
+                @include ud-btn-link;
+                @include ud-heading-lg;
+
+                background: #f7f9fa;
+                padding: 0.8rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 1.6rem 0;
+                color: #2d2f31 !important;
+                display: block;
+                height: 4.8rem;
+                text-align: left;
+                white-space: normal;
+                width: 100%;
+                .title-accordion {
+                  display: flex;
+                  flex: 1;
+                  .payment__methor-panel {
+                    @include ud_btn;
+                    @include ud-btn-link;
+                    @include ud-heading-lg;
+                    color: #2d2f31 !important;
+                    display: block;
+                    height: 4.8rem;
+                    text-align: left;
+                    white-space: normal;
+                    width: 100%;
+                    bottom: 15px;
+                    background: #f7f9fa;
+                    .acordiion-panel-title {
+                      text-align: center;
+                      display: flex;
+                      .toggle__radio {
+                        @include ud-fake-toggle-input;
+                        @include ud-fake-toggle-radio;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        top: 0;
+                        margin-top: 5px;
+                        &.active {
+                          background-color: $black-color;
+                        }
+                      }
+                      .payment__lable-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        flex: 1;
+                        .payment__lable {
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          position: relative;
+                          margin-right: 1.6rem;
+                          top: 0.1rem;
+                          .payment-method-label-img {
+                            max-width: 4.2rem;
+                            height: 2.8rem;
+                            border: 1px solid #d1d7dc;
+                            border-radius: 4px;
+                            background: #fff;
+                            margin: 0 0.8rem 0 0;
+                            .payment__nbAcount {
+                              @include ud-heading-md;
+                            }
+                          }
+                        }
+                        .payment__lable-options {
+                          display: flex;
+                          align-items: center;
+                          justify-content: flex-end;
+                          flex-wrap: wrap;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .acordion__panel {
+                max-height: none;
+                // overflow: visible;
+                // visibility: visible;
+                display: none;
+                .acordion__panel-content {
+                  border-top: 1px solid #d1d7dc;
+                  padding: 3.2rem 2.4rem;
+                  .payment-credit-card {
+                    display: flex;
+                    justify-content: space-between;
+                    section {
+                      display: flex;
+                      flex-direction: column;
+                      .name__card,
+                      .number__card,
+                      .date__card {
+                        @include ud-heading-sm;
+                      }
+                      .full__NAME-card,
+                      .full__number-card,
+                      .full__date-card {
+                        @include ud-text-sm;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .oder__summary {
+          padding: 0;
+          margin-bottom: 4.8rem;
+          .oder__title {
+            @include ud-heading-xl;
+            margin-bottom: 1.6rem;
+          }
+          .oder__list {
+            list-style: none;
+            padding: 0;
+            max-width: unset;
+            .oder__item {
+              padding: 0.8rem 0;
+              display: flex;
+              .oder__item-summary {
+                flex: 1;
+                .order-items-list--shopping-list-item-img {
+                  width: 5.2rem;
+                  height: 3.2rem;
+                  float: left;
+                  margin: 0;
+                  margin-right: 0.8rem;
+                }
+              }
+              .oder__item-price {
+                width: 9.6rem;
+                text-align: right;
+                font-weight: 400;
+                color: #2d2f31;
+                .item-price {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .check__out-summary {
+        margin: 0 auto;
+        padding: 0 4.8rem 0 2.4rem;
+        max-width: 60rem;
+        background: #fff;
+        min-width: 60rem;
+        background: #f7f9fa;
+        .check__out-content-wrapper {
+          max-width: 38.4rem;
+          box-sizing: border-box;
+          display: table;
+          padding: 0 3.2rem 0 4.8rem;
+          position: sticky;
+          top: 2rem;
+          width: 100%;
+          margin-top: 10.4rem;
+          .pricing__summary {
+            .pricing__title {
+              @include ud-heading-xl;
+            }
+            .list__amount-summary,
+            .discount__amount-summary {
+              @include ud-text-sm;
+              display: flex;
+              margin-bottom: 0.8rem;
+              line-height: 1.44;
+              justify-content: space-between;
+            }
+            .pricing__content-divider {
+              border-bottom: 1px solid #d1d7dc;
+              margin: 1.2rem 0;
+            }
+            .total__amount-summary {
+              @include ud-text-sm;
+              font-weight: 700;
+              margin-bottom: 0;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+          .check__out-btn {
+            display: flex;
+            flex-direction: column;
+            .checkout__button-wrapper {
+              display: flex;
+              margin: 3.2rem 0;
+              flex-direction: column;
+              .checkout__term {
+                @include ud-text-xs;
+                color: #6a6f73;
+                margin-bottom: 1.6rem;
+              }
+              .refund {
+                text-align: center;
+              }
+              .btn__bougth {
+                @include ud_btn;
+                @include ud-heading-md;
+                margin-bottom: 1.6rem;
+                background-color: $color-purple-300;
+                color: $white-color;
+                height: 4.8rem;
+                width: 100%;
+                padding: 3rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

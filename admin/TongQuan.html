@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoCPT.png" />
+    <link rel="stylesheet" href="./css/style_mainQT.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script type="module" src="./js/HomeAdmin.js"></script>
+    <script src="./js/click.js"></script>
+    <title>Adimn tổng quát</title>
+  </head>
+
+  <body ng-app="AdminHome" ng-controller="StatisticCtrl">
+    <section class="header">
+      <a href="javascript:void(0);" class="icon" onclick="openBTN()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="box-login" id="box-t">
+        Xin chào, <span id="ten_nv">Admin</span>
+        <i class="fas fa-sort-down"></i>
+        <div class="box-login-bottom" id="box-b">
+          <button onclick="TTTaiKhoan()">
+            <i class="fas fa-user-alt"></i> Tài khoản
+          </button>
+          <button onclick="LogOut();">
+            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="row">
+        <div class="col-1 col-s-12 category">
+          <button class="active" onclick="TongQuan()">
+            <i class="fas fa-tachometer-alt"></i> Tổng quan
+          </button>
+          <button onclick="LoaiSanPham()">
+            <i class="fas fa-boxes"></i> lĩnh vực
+          </button>
+          <button onclick="categorys()">
+            <i class="fas fa-boxes"></i> Thể loại
+          </button>
+
+          <button onclick="topic()"><i class="fas fa-boxes"></i> Chủ đề</button>
+          <button onclick="khoahoc()">
+            <i class="fas fa-barcode"></i> Khóa học
+          </button>
+
+          <button onclick="teacher()">
+            <i class="fas fa-barcode"></i> Giáo viên
+          </button>
+
+          <button onclick="KhachHang()">
+            <i class="fas fa-users"></i> Khách hàng
+          </button>
+
+          <button onclick="HoaDon()">
+            <i class="fas fa-shopping-cart"></i> Hóa đơn
+          </button>
+        </div>
+        <div class="bx-left" id="button-left">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeBTN()"
+            ><i class="far fa-window-close"></i
+          ></a>
+          <ul>
+            <li onclick="TongQuan()">
+              <i class="fas fa-tachometer-alt"></i> Tổng quan
+            </li>
+            <li onclick="LoaiSanPham()">
+              <i class="fas fa-boxes"></i> Lĩnh vực
+            </li>
+            <li onclick="categorys()"><i class="fas fa-boxes"></i> Thể loại</li>
+            <li onclick="topic()"><i class="fas fa-boxes"></i> Chủ đề</li>
+
+            <li onclick="khoahoc()"><i class="fas fa-barcode"></i> Khóa học</li>
+
+            <li onclick="teacher()"><i class="fas fa-barcode"></i>giáo viên</li>
+            <li onclick="KhachHang()">
+              <i class="fas fa-users"></i> Khách hàng
+            </li>
+
+            <li onclick="HoaDon()">
+              <i class="fas fa-shopping-cart"></i> Hóa đơn
+            </li>
+          </ul>
+        </div>
+        <div class="col-11 col-s-12 content">
+          <div class="col-12 col-s-12 content">
+            <div class="tabcontent">
+              <div class="title">
+                <i class="fas fa-signal"></i> Hoạt động hôm nay
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box" style="background-color: #9abc32">
+                    <div class="box-left"><i class="fas fa-signal"></i></div>
+                    <div class="box-right">
+                      Tiền bán khóa học<br /><span>50.000.000</span>đ
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box" style="background-color: #6fb3e0">
+                    <div class="box-left"><i class="fas fa-cloud"></i></div>
+                    <div class="box-right box-right-course">
+                      <div>
+                        Số khóa học: <span>10</span><br />
+                        Số chủ đề: <span>15</span>
+                      </div>
+                      <div style="margin-left: 120px">
+                        Số lĩnh vực: <span>10</span><br />
+                        Số thể loại: <span>15</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box" style="background-color: #d53f">
+                    <div class="box-left"><i class="fas fa-undo-alt"></i></div>
+                    <div class="box-right">
+                      Khách hàng trả<br /><span>0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box2" style="border: 1px solid #6fb3e0">
+                    <div
+                      class="box2-top"
+                      style="border-bottom: 1px solid #6fb3e0"
+                    >
+                      <i class="fas fa-signal"></i> Hoạt động
+                    </div>
+                    <div class="box2-bot">
+                      <div class="box2-bot-left">Tiền bán khóa học</div>
+                      <div class="box2-bot-right">10.000.000</div>
+                      <div class="box2-bot-left">Số hóa đơn</div>
+                      <div class="box2-bot-right">100</div>
+                      <div class="box2-bot-left">Số khóa học</div>
+                      <div class="box2-bot-right">10</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box2" style="border: 1px solid #e8b110">
+                    <div
+                      class="box2-top"
+                      style="border-bottom: 1px solid #e8b110"
+                    >
+                      <i class="fas fa-boxes"></i> Thông tin kho
+                    </div>
+                    <div class="box2-bot">
+                      <div class="box2-bot-left">Tồn kho</div>
+                      <div class="box2-bot-right">0</div>
+                      <div class="box2-bot-left">Vượt định mức</div>
+                      <div class="box2-bot-right">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-s-12 padding-box">
+                  <div class="box2" style="border: 1px solid #9abc32">
+                    <div
+                      class="box2-top"
+                      style="border-bottom: 1px solid #9abc32"
+                    >
+                      <i class="fas fa-boxes"></i> Thông tin khóa học
+                    </div>
+                    <div class="box2-bot">
+                      <div class="box2-bot-left">Số khoá học được đăng ký</div>
+                      <div class="box2-bot-right">0</div>
+                      <div class="box2-bot-left">Chưa nhập giá khóa học</div>
+                      <div class="box2-bot-right">0</div>
+                      <div class="box2-bot-left">khóa học chưa phân loại</div>
+                      <div class="box2-bot-right">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-s-12 content">
+              <div class="tabcontent">
+                <div class="title">
+                  <i class="fas fas fa-boxes"></i> Nhập thông tin thống kê hóa
+                  đơn
+                  <hr />
+                </div>
+                <div class="row">
+                  <form name="form-Statistic" method="post">
+                    <div class="col-12 col-s-12 padding-box">
+                      <label for="txtright">Tháng:</label>
+                    </div>
+                    <div class="col-12 col-s-12 padding-box">
+                      <input
+                        type="text"
+                        name="month"
+                        id="month"
+                        placeholder="Nhập tháng để thống kê hóa đơn"
+                      />
+                    </div>
+                    <div class="col-12 col-s-12 padding-box">
+                      <label for="txtright">Năm:</label>
+                    </div>
+                    <div class="col-12 col-s-12 padding-box">
+                      <input
+                        type="text"
+                        name="year"
+                        id="year"
+                        placeholder="Nhập năm thống kê hóa đơn"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      id="btnSubmit"
+                      class="btn-form"
+                      style="background-color: rgba(44, 140, 15, 0.8)"
+                    >
+                      Submit
+                    </button>
+                    <button
+                      type="submit"
+                      id="btn__reload"
+                      class="btn-form"
+                      style="background-color: rgba(227, 32, 21, 0.8)"
+                    >
+                      Nhập mới
+                    </button>
+
+                    <hr />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-s-12 content">
+              <div class="tabcontent">
+                <div class="title">
+                  <i class="fas fas fa-boxes"></i> Danh sách thống kê các hóa
+                  đơn
+                  <button style="margin-right: 3px">
+                    <i class="far fa-trash-alt"></i> Xóa chọn
+                  </button>
+                  <hr />
+                </div>
+                <div class="row">
+                  <div class="col-10 col-s-12 padding-box">
+                    <input
+                      type="text"
+                      id="search-product-type"
+                      placeholder="Nhập mã, tên loại ..."
+                    />
+                  </div>
+                  <div class="col-2 col-s-12 padding-box">
+                    <button><i class="fas fas fa-search"></i> Tìm kiếm</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-s-12 padding-box">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th style="padding-top: 10px">
+                            <input type="checkbox" />
+                          </th>
+                          <th>Tên khách hàng</th>
+                          <th>Tên khóa học</th>
+                          <th>Số tiền khóa học</th>
+                          <th>Ngày tạo hóa đơn</th>
+                          <!-- <th>Thao tác</th> -->
+                        </tr>
+                      </thead>
+                      <tbody id="listTypeProduct"></tbody>
+                      <tbody>
+                        <tr class="fielditem">
+                          <td style="text-align: center; padding-top: 10px">
+                            <input type="checkbox" value="" id="" />
+                          </td>
+                          <td>2005</td>
+                          <td>
+                            HTML CSS Master - Nắm chắc toàn bộ kiến thức HTML
+                            CSS A-Z
+                          </td>
+                          <td>699.000</td>
+                          <td>12/10/2023</td>
+                        </tr>
+                        <tr class="fielditem">
+                          <td style="text-align: center; padding-top: 10px">
+                            <input type="checkbox" value="" id="" />
+                          </td>
+                          <td>2006</td>
+                          <td>
+                            Crash Course: Build a Full-Stack Web App in a
+                            Weekend!
+                          </td>
+                          <td>1.799.000</td>
+                          <td>12/10/2023</td>
+                        </tr>
+                        <tr class="fielditem">
+                          <td style="text-align: center; padding-top: 10px">
+                            <input type="checkbox" value="" id="" />
+                          </td>
+                          <td>2007</td>
+                          <td>React & TypeScript - The Practical Guide</td>
+                          <td>1.099.000</td>
+                          <td>12/10/2023</td>
+                        </tr>
+                        <tr class="fielditem">
+                          <td style="text-align: center; padding-top: 10px">
+                            <input type="checkbox" value="" id="" />
+                          </td>
+                          <td>2005</td>
+                          <td>
+                            Node.js, Express, MongoDB & More: The Complete
+                            Bootcamp 2024
+                          </td>
+                          <td>2.299.000</td>
+                          <td>12/10/2023</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <div class="box-sum">
+                      <div class="box-left">
+                        Tổng số tiền bán được :
+                        <span>5.000.000</span>
+                      </div>
+                      <div class="box-right">
+                        <button class="btn-prev">
+                          <i class="fas fa-angle-left"></i>
+                        </button>
+
+                        <div class="navigation">
+                          <button data-id="1">1</button>
+                          <button data-id="2">2</button>
+                          <button data-id="3">3</button>
+                          <button data-id="4">4</button>
+                        </div>
+                        <button class="btn-next">
+                          <i class="fas fa-angle-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

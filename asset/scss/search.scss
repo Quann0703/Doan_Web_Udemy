@@ -1,0 +1,50 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+.search__header-container {
+  margin-bottom: 2.4rem;
+  .search__title {
+    @include ud-heading-xl;
+    max-width: 80rem;
+  }
+}
+.course-directory {
+  margin-top: 7rem;
+  margin-bottom: 3.2rem;
+  .pagilation__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .transitionTap {
+      @include ud_btn;
+      @include ud-heading-sm;
+      @include ud-btn-secondary;
+      //   cursor: not-allowed;
+      opacity: 0.5;
+      min-width: auto;
+      border-radius: 50%;
+      padding: 0 1rem;
+      width: 4rem;
+      height: 4rem;
+    }
+    .pagilation-prev {
+      margin-right: 0.8rem;
+    }
+    .pagilation-next {
+      margin-left: 0.8rem;
+    }
+    .navigation {
+      .pagilation-number {
+        @include ud_btn;
+        @include ud-btn-ghost;
+        @include ud-heading-sm;
+        height: 4rem;
+        width: 4rem;
+        cursor: default;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

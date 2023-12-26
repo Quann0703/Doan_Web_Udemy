@@ -1,0 +1,349 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+.container-cart {
+  flex: 1 0 auto;
+  .cart__page {
+    max-width: 1300px;
+    .cart__page-container {
+      padding: 0 4.8rem;
+      margin-bottom: 6.4rem;
+      .cart__title {
+        margin-top: 3.2rem;
+        display: flex;
+        width: 100%;
+        .cart__title-text {
+          @include ud-heading-xxxl;
+          margin: 0;
+        }
+      }
+      .cart__notification {
+        margin-top: 3.2rem;
+      }
+      .cart__shoping-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.4rem;
+        .cart__shoping-section-list {
+          flex: 1;
+          margin-top: 0;
+          .style__shoping-list {
+            @include ud-heading-md;
+            margin-bottom: 0.8rem;
+          }
+          .style__shoping-list-wrapper {
+            @include ud-unstyled-list;
+            min-width: 100%;
+            .style__shoping-item-wrapper {
+              padding: 1.6rem 0;
+              border-top: 1px solid #d1d7dc;
+              .shoping__item-with-inline {
+                grid:
+                  "image header header actions price" auto
+                  "image badges rating actions price" auto
+                  "image meta meta actions price" auto/auto auto 1fr auto auto;
+                grid-template-rows: auto auto auto;
+                grid-template-columns: auto auto 1fr auto auto;
+                grid-template-areas:
+                  "image header header actions price"
+                  "image badges rating actions price"
+                  "image meta meta actions price";
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                grid-auto-rows: auto;
+              }
+              .shoping__item-container {
+                position: relative;
+                display: grid;
+                .shoping__item-img {
+                  grid-area: image;
+                  .shoping__item-img-wrapper {
+                    margin-right: 1.6rem;
+                    background-color: #2d2f31;
+                    border: 1px solid #d1d7dc;
+                    overflow: hidden;
+                    position: relative;
+                    .shopping-item--course-image {
+                      display: block;
+                      transition: opacity linear 100ms;
+                      object-fit: cover;
+                      width: 12rem;
+                      height: 6.8rem;
+                    }
+                  }
+                }
+                .shoping__item-header {
+                  grid-area: header;
+                  min-width: 1px;
+                  width: 373px;
+                  .shopping-item--course-title {
+                    @include ud-heading-md;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: normal;
+                    a {
+                      color: #2d2f31;
+                      &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                      }
+                    }
+                  }
+                  .shoping__item-instructor {
+                    @include ud-text-xs;
+                    .shopping-item--instructor-list {
+                      display: block;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      margin-top: 0.4rem;
+                    }
+                  }
+                }
+                .shoping__item-badges {
+                  grid-area: badges;
+                  margin-top: 0.8rem;
+                  margin-right: 0.8rem;
+                  display: flex;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  gap: 0.4rem 0.8rem;
+                  .course__badges-best-sales {
+                    @include ud-badge;
+                    @include ud-heading-xs;
+                    background-color: $color-yellow-200;
+                    color: $color-yellow-500;
+                  }
+                }
+                .shoping__item-rating {
+                  grid-area: rating;
+                  margin-top: 0.8rem;
+                  display: flex;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  .star__rating-warrper {
+                    display: inline-flex;
+                    align-items: center;
+                    .star__rating-rank {
+                      @include ud-heading-sm;
+                      margin-right: 0.4rem;
+                      color: #4d3105;
+                    }
+                  }
+                  .shoping__item-review {
+                    @include ud-text-xs;
+                    color: #6a6f73;
+                    margin-left: 0.4rem;
+                  }
+                }
+                .shoping__item-meta {
+                  @include ud-text-xs;
+                  grid-area: meta;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                  flex-wrap: wrap;
+                  margin-top: 0.8rem;
+                  color: #6a6f73;
+                  .item-meta-hourse,
+                  .item-meta-number-lesson,
+                  .item-meta-level {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                  }
+                }
+                .shoping__item-action {
+                  margin-top: 0;
+                  padding-left: 2.4rem;
+                  grid-area: actions;
+                  gap: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  justify-content: flex-start;
+                  .action__remove,
+                  .action__saves-for-later,
+                  .action__action-move-wishlist {
+                    @include ud-btn-ghost;
+                    @include ud_btn;
+                    @include ud-text-sm;
+                    min-width: auto;
+                    padding: 0 0.8rem;
+                    height: 2.8rem;
+                  }
+                }
+                .shoping__item-price {
+                  grid-area: price;
+                  padding-left: 4.8rem;
+                  display: flex;
+                  .shoping__price-discount {
+                    color: #a435f0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    .shoping__price-part {
+                      @include ud-heading-md;
+                      margin-right: 0;
+                      line-height: 1;
+                      padding: 0.4rem 0;
+                      white-space: nowrap;
+                    }
+                    .shoping__price-curent {
+                      @include ud-text-sm;
+                      margin-right: 0;
+                      color: #6a6f73;
+                      line-height: 1;
+                      padding: 0.4rem 0;
+                      white-space: nowrap;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .cart__shoping-section-checkout {
+          flex: 1;
+          max-width: 30rem;
+          margin-left: 6.4rem;
+          .total__price-total-checkout {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 0.8rem;
+            .price-text-container {
+              color: #2d2f31;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-items: flex-start;
+              .total-label {
+                @include ud-heading-md;
+                color: #6a6f73;
+                margin-bottom: 0.8rem;
+              }
+              .total-part {
+                @include ud-heading-xxl;
+              }
+              .total__curent-part {
+                @include ud-text-md;
+                color: #6a6f73;
+              }
+              .discount-part {
+                @include ud-text-md;
+              }
+              .price__text-part {
+                line-height: 1;
+                padding: 0.4rem 0;
+                margin-right: 0.8rem;
+                white-space: nowrap;
+              }
+            }
+          }
+          .btn__checkout {
+            @include ud_btn;
+            @include ud-heading-md;
+            width: 100%;
+            height: 4.8rem;
+            padding: 0px 10.2rem;
+            background-color: $color-purple-300;
+            color: $white-color;
+            a {
+              color: $white-color;
+            }
+          }
+        }
+      }
+      .cart__shoping-recomment {
+        margin-top: 4.8rem;
+        .component__magin {
+          .list__course {
+            margin-left: -2px;
+            margin-right: -2px;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            .course__index {
+              width: 25%;
+              display: flex;
+              flex-direction: column;
+              max-width: 37.5rem;
+              min-width: 17.3rem;
+              background-color: $white-color;
+              .course__item-wrap {
+                overflow: unset;
+                position: relative;
+                background-color: $white-color;
+                .course__item-img {
+                  // border-radius: 16px;
+                  display: block;
+                  object-fit: cover;
+                  overflow: hidden;
+                  // padding-top: 56.25%;
+                  position: relative;
+                  width: 100%;
+                  .item-img {
+                    object-fit: cover;
+                    width: 100%;
+                  }
+                }
+                .course__item-item {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: normal;
+                  font-weight: 700;
+                  line-height: 1.2;
+                  letter-spacing: -0.02rem;
+                  font-size: 1.6rem;
+                  margin-left: 7px;
+                  text-align: start;
+                }
+                .course__item-teacher {
+                  color: #666;
+                  font-size: 1.2rem;
+                  margin: 0;
+                  text-align: start;
+                  margin-left: 7px;
+                  text-align: start;
+                }
+                .course__item-price-text {
+                  flex-wrap: wrap;
+                  display: flex;
+                }
+                .course__item-price-text {
+                  @include ud-heading-md;
+                  display: flex;
+                  margin-left: 7px;
+                  .course__item-price-text-cost {
+                    line-height: 1;
+                    padding: 0.4rem 0;
+                    margin-right: 0.8rem;
+                    white-space: nowrap;
+                    letter-spacing: -0.02rem;
+                    font-weight: 700;
+                    font-size: 1.7rem;
+                    .course__item-price-text-persent {
+                      position: absolute;
+                      height: 1px;
+                      width: 1px;
+                      overflow: hidden;
+                      clip: rect(1px, 1px, 1px, 1px);
+                    }
+                    .course__item-price-text-persent-fee {
+                      color: #6a6f73;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

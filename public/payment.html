@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="/asset/css/grid.css" />
+    <link rel="stylesheet" href="/asset/css/base.css    " />
+    <link rel="stylesheet" href="/asset/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="/asset/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"
+    />
+  </head>
+  <body ng-app="Udemy" ng-controller="ContainerCtrl">
+    <div class="app">
+      <header>
+        <div class="grid">
+          <div class="row heading__payment">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="../asset/img/Logo/logo-udemy.svg" alt="" />
+              </a>
+            </div>
+            <button type="button" class="btnCancel">
+              <span>Hủy</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="main__content">
+        <div class="maketplace__checkout">
+          <div class="maketplace__checkout-main-content">
+            <div class="check__out-overview">
+              <h1 class="checkout__header">Thanh toán</h1>
+              <section aria-label="Địa chỉ thanh toán" class="billing__adress">
+                <h2 class="billing__adress-title">Địa chỉ thanh toán</h2>
+                <div class="billing__adress-content">
+                  <div class="billing__adress-element">
+                    <label for="" class="adress__title"
+                      >Quốc gia
+                      <span class="label-tag">Bắt buộc</span>
+                    </label>
+                    <div class="select__adress">
+                      <div class="select__icon-left">
+                        <i class="fa-solid fa-earth-americas"></i>
+                      </div>
+                      <select
+                        required=""
+                        aria-invalid="false"
+                        autocomplete="off"
+                        data-purpose=""
+                        class="adress__select"
+                      >
+                        <option value="" disabled="">Vui lòng chọn...</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="EG">Ai Cập</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AG">Antigua và Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="PL">Ba Lan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BQ">Bonaire</option>
+                        <option value="BA">Bosnia và Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="BE">Bỉ</option>
+                        <option value="PT">Bồ Đào Nha</option>
+                        <option value="CI">Bờ Biển Ngà</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="KH">Campuchia</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="AE">
+                          Các Tiểu Vương Quốc Ả Rập Thống Nhất
+                        </option>
+                        <option value="TF">
+                          Các lãnh thổ phía Nam thuộc Pháp
+                        </option>
+                        <option value="UM">Các đảo xa thuộc Hoa Kỳ</option>
+                        <option value="DO">Cộng hoà Dominica</option>
+                        <option value="CD">Cộng hoà Dân chủ Congo</option>
+                        <option value="CF">Cộng hoà Trung Phi</option>
+                        <option value="CZ">Cộng hòa Séc</option>
+                        <option value="CY">Cộng hòa Síp</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DE">Dức</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GF">Guiana thuộc Pháp</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GQ">Guinea Xích đạo</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="US">Hoa Kỳ</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HU">Hungary</option>
+                        <option value="GR">Hy Lạp</option>
+                        <option value="NL">Hà Lan</option>
+                        <option value="KR">Hàn Quốc</option>
+                        <option value="HK">Hồng Kông</option>
+                        <option value="IS">Iceland</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IL">Israel</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="XK">Kosovo</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="LA">Lào</option>
+                        <option value="IO">Lãnh thổ Anh tại Ấn Độ Dương</option>
+                        <option value="PS">Lãnh thổ Palestine</option>
+                        <option value="MO">Ma Cao</option>
+                        <option value="MK">Macedonia</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar (Miến Điện)</option>
+                        <option value="MN">Mông Cổ</option>
+                        <option value="NO">Na Uy</option>
+                        <option value="AQ">Nam Cực</option>
+                        <option value="GS">
+                          Nam Georgia và Quần đảo Nam Sandwich
+                        </option>
+                        <option value="ZA">Nam Phi</option>
+                        <option value="SS">Nam Sudan</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="RU">Nga</option>
+                        <option value="JP">Nhật Bản</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="FR">Pháp</option>
+                        <option value="FI">Phần Lan</option>
+                        <option value="PF">Polynesia thuộc Pháp</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="KY">Quần đảo Cayman</option>
+                        <option value="CC">Quần đảo Cocos (Keeling)</option>
+                        <option value="CK">Quần đảo Cook</option>
+                        <option value="FK">
+                          Quần đảo Falkland (Islas Malvinas)
+                        </option>
+                        <option value="FO">Quần đảo Faroe</option>
+                        <option value="MH">Quần đảo Marshall</option>
+                        <option value="PN">Quần đảo Pitcairn</option>
+                        <option value="SB">Quần đảo Solomon</option>
+                        <option value="TC">Quần đảo Turks và Caicos</option>
+                        <option value="VG">Quần đảo Virgin thuộc Anh</option>
+                        <option value="VI">Quần đảo Virgin thuộc Hoa Kỳ</option>
+                        <option value="AX">Quần đảo Åland</option>
+                        <option value="RO">Romania</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="RE">Réunion</option>
+                        <option value="BL">Saint Barthélemy</option>
+                        <option value="SH">Saint Helena</option>
+                        <option value="KN">Saint Kitts và Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin</option>
+                        <option value="PM">Saint Pierre và Miquelon</option>
+                        <option value="VC">Saint Vincent và Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="AS">Samoa thuộc Mỹ</option>
+                        <option value="SM">San Marino</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SO">Somalia</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard và Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="ST">São Tomé và Príncipe</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="VA">Thành Vatican</option>
+                        <option value="TH">Thái Lan</option>
+                        <option value="TR">Thổ Nhĩ Kỳ</option>
+                        <option value="CH">Thụy Sĩ</option>
+                        <option value="SE">Thụy Điển</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad và Tobago</option>
+                        <option value="CN">Trung Quốc</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="ES">Tây Ban Nha</option>
+                        <option value="EH">Tây Sahara</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Việt Nam</option>
+                        <option value="GB">Vương quốc Anh</option>
+                        <option value="WF">Wallis và Futuna</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                        <option value="AT">Áo</option>
+                        <option value="AU">Úc</option>
+                        <option value="IT">Ý</option>
+                        <option value="DK">Đan Mạch</option>
+                        <option value="TW">Đài Loan</option>
+                        <option value="TL">Đông Timor</option>
+                        <option value="BV">Đảo Bouvet</option>
+                        <option value="MP">Đảo Bắc Mariana</option>
+                        <option value="CX">Đảo Giáng Sinh</option>
+                        <option value="HM">
+                          Đảo Heard và Quần đảo McDonald
+                        </option>
+                        <option value="IM">Đảo Man</option>
+                        <option value="NF">Đảo Norfolk</option>
+                        <option value="SA">Ả Rập Xê-út</option>
+                      </select>
+                      <div class="select__icon-right">
+                        <i class="fa-solid fa-chevron-down chevron-course"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="billing__adress-term">
+                  Theo luật pháp, Udemy bắt buộc phải thu thuế giao dịch hiện
+                  hành đối với giao dịch mua được thực hiện trong một số khu vực
+                  có quy định riêng về thuế.
+                </div>
+              </section>
+              <section class="payment__methor-container">
+                <div class="payment__methor-title">
+                  <h2 class="payment__heading">Phương thức thanh toán</h2>
+                  <p class="payment__text">
+                    <span>Kết nối bảo mật</span>
+                  </p>
+                </div>
+                <div class="payment__content">
+                  <div>
+                    <div class="panel__wrap">
+                      <div class="acdotion__module">
+                        <h3 class="title-accordion">
+                          <button type="button" class="payment__methor-panel">
+                            <span class="acordiion-panel-title">
+                              <span class="toggle__radio"></span>
+                              <span class="payment__lable-container">
+                                <div class="payment__lable">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-default.svg"
+                                    alt="Card"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <span class="payment__nbAcount"
+                                    >Visa **** 8077</span
+                                  >
+                                </div>
+                                <span class="payment__lable-options">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-visa.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                </span>
+                              </span>
+                            </span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="acordion__panel">
+                        <div class="acordion__panel-content">
+                          <div class="payment-credit-card">
+                            <section>
+                              <h4 class="name__card">Tên trên thẻ</h4>
+                              <p class="full__NAME-card">
+                                {{userdata.fullName}}
+                              </p>
+                            </section>
+                            <section>
+                              <h4 class="number__card">Số thẻ</h4>
+                              <p class="full__number-card">**** 8077</p>
+                            </section>
+                            <section>
+                              <h4 class="date__card">Ngày hết hạn</h4>
+                              <p class="full__date-card">3/2028</p>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment__content">
+                  <div>
+                    <div class="panel__wrap">
+                      <div class="acdotion__module">
+                        <h3 class="title-accordion">
+                          <button type="button" class="payment__methor-panel">
+                            <span class="acordiion-panel-title">
+                              <span class="toggle__radio"></span>
+                              <span class="payment__lable-container">
+                                <div class="payment__lable">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-default.svg"
+                                    alt="Card"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <span class="payment__nbAcount"
+                                    >Thẻ tín dụng/Thẻ ghi nợ</span
+                                  >
+                                </div>
+                                <span class="payment__lable-options">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-amex.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <img
+                                    src="	https://www.udemy.com/staticx/udemy/images/v9/card-mastercard.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-discover.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/card-visa.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                </span>
+                              </span>
+                            </span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="acordion__panel">
+                        <div class="acordion__panel-content">
+                          <div class="payment-credit-card">
+                            <section>
+                              <h4 class="name__card">Tên trên thẻ</h4>
+                              <p class="full__NAME-card">TRAN VAN QUAN</p>
+                            </section>
+                            <section>
+                              <h4 class="number__card">Số thẻ</h4>
+                              <p class="full__number-card">**** 8077</p>
+                            </section>
+                            <section>
+                              <h4 class="date__card">Ngày hết hạn</h4>
+                              <p class="full__date-card">3/2028</p>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment__content boder__bottom">
+                  <div>
+                    <div class="panel__wrap">
+                      <div class="acdotion__module">
+                        <h3 class="title-accordion">
+                          <button type="button" class="payment__methor-panel">
+                            <span class="acordiion-panel-title">
+                              <span class="toggle__radio"></span>
+                              <span class="payment__lable-container">
+                                <div class="payment__lable">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/hpp-paypal.svg"
+                                    alt="Card"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                  <span class="payment__nbAcount">PayPal</span>
+                                </div>
+                                <span class="payment__lable-options">
+                                  <img
+                                    src="https://www.udemy.com/staticx/udemy/images/v9/hpp-paypal.svg"
+                                    alt="VISA"
+                                    width="40px"
+                                    height="26px"
+                                    class="payment-method-label-img"
+                                    loading="eager"
+                                  />
+                                </span>
+                              </span>
+                            </span>
+                          </button>
+                        </h3>
+                      </div>
+                      <div class="acordion__panel">
+                        <div class="acordion__panel-content">
+                          <div class="payment-credit-card">
+                            <section>
+                              <h4 class="name__card">Tên trên thẻ</h4>
+                              <p class="full__NAME-card">TRAN VAN QUAN</p>
+                            </section>
+                            <section>
+                              <h4 class="number__card">Số thẻ</h4>
+                              <p class="full__number-card">**** 8077</p>
+                            </section>
+                            <section>
+                              <h4 class="date__card">Ngày hết hạn</h4>
+                              <p class="full__date-card">3/2028</p>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="oder__summary">
+                <h2 class="oder__title">Thông tin đặt hàng</h2>
+                <ul class="oder__list"></ul>
+              </section>
+            </div>
+            <div class="check__out-summary">
+              <div class="check__out-content-wrapper">
+                <section class="pricing__summary">
+                  <h2 class="pricing__title">Tóm tắt</h2>
+                  <div class="list__amount-summary">
+                    <span>Giá gốc: </span>
+                    <span class="total__curent"> ₫ 0</span>
+                  </div>
+                  <div class="discount__amount-summary">
+                    <span>Mức chiết khấu: </span>
+                    <span> -₫ 0</span>
+                  </div>
+                  <div class="pricing__content-divider"></div>
+                  <div class="total__amount-summary">
+                    <span>Tổng tiền:</span>
+                    <span class="total__payment">₫ 0</span>
+                  </div>
+                </section>
+                <div class="check__out-btn">
+                  <div class="checkout__button-wrapper">
+                    <div class="checkout__term">
+                      <span
+                        >Bằng việc hoàn tất giao dịch mua, bạn đồng ý với
+                        <a
+                          href="https://www.udemy.com/terms/"
+                          class="bold"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Điều khoản dịch vụ</a
+                        >
+                        này.</span
+                      >
+                    </div>
+                    <button class="btn__bougth">
+                      <span>Hoàn tất thanh toán</span>
+                    </button>
+                    <div class="checkout__term refund">
+                      Đảm bảo hoàn tiền trong 30 ngày
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="module" src="../js/payment.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

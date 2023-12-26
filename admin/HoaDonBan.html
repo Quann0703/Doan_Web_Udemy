@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logoCPT.png" />
+    <link rel="stylesheet" href="./css/style_mainQT.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/global.js"></script>
+    <!-- <script type="module" src="./js/courseAmin.js"></script> -->
+    <script type="module" src="./js/invoicesAmin.js"></script>
+    <script src="./js/click.js"></script>
+    <title>Hóa đơn</title>
+  </head>
+
+  <body ng-app="AdminHD" ng-controller="invoicesctrl">
+    <section class="header">
+      <a href="javascript:void(0);" class="icon" onclick="openBTN()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="box-login" id="box-t">
+        Xin chào, <span id="ten_nv">Admin</span>
+        <i class="fas fa-sort-down"></i>
+        <div class="box-login-bottom" id="box-b">
+          <button onclick="TTTaiKhoan()">
+            <i class="fas fa-user-alt"></i> Tài khoản
+          </button>
+          <button onclick="LogOut();">
+            <i class="fas fa-sign-out-alt"></i> Đăng xuất
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="row">
+        <div class="col-1 col-s-12 category">
+          <button onclick="TongQuan()">
+            <i class="fas fa-tachometer-alt"></i> Tổng quan
+          </button>
+          <button onclick="LoaiSanPham()">
+            <i class="fas fa-boxes"></i> lĩnh vực
+          </button>
+          <button onclick="categorys()">
+            <i class="fas fa-boxes"></i> Thể loại
+          </button>
+
+          <button onclick="topic()"><i class="fas fa-boxes"></i> Chủ đề</button>
+          <button onclick="khoahoc()">
+            <i class="fas fa-barcode"></i> Khóa học
+          </button>
+          <button onclick="teacher()">
+            <i class="fas fa-barcode"></i> Giáo viên
+          </button>
+          <button onclick="KhachHang()">
+            <i class="fas fa-users"></i> Khách hàng
+          </button>
+
+          <button class="active" onclick="HoaDon()">
+            <i class="fas fa-shopping-cart"></i> Hóa đơn
+          </button>
+        </div>
+        <div class="bx-left" id="button-left">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeBTN()"
+            ><i class="far fa-window-close"></i
+          ></a>
+          <ul>
+            <li onclick="TongQuan()">
+              <i class="fas fa-tachometer-alt"></i> Tổng quan
+            </li>
+            <li onclick="LoaiSanPham()">
+              <i class="fas fa-boxes"></i> Lĩnh vực
+            </li>
+            <li onclick="categorys()"><i class="fas fa-boxes"></i> Thể loại</li>
+            <li onclick="topic()"><i class="fas fa-boxes"></i> Chủ đề</li>
+
+            <li onclick="khoahoc()"><i class="fas fa-barcode"></i> Khóa học</li>
+
+            <li onclick="teacher()"><i class="fas fa-barcode"></i>giáo viên</li>
+            <li onclick="KhachHang()">
+              <i class="fas fa-users"></i> Khách hàng
+            </li>
+
+            <li onclick="HoaDon()">
+              <i class="fas fa-shopping-cart"></i> Hóa đơn
+            </li>
+          </ul>
+        </div>
+        <div class="col-11 col-s-12 content">
+          <div class="col-4 col-s-12 content">
+            <div class="tabcontent">
+              <div class="title">
+                <i class="fas fa-barcode"></i> Nhập thông tin hóa đơn
+                <hr />
+              </div>
+              <div class="row">
+                <form name="from-Invoices" method="post">
+                  <div class="col-12 col-s-12 padding-box">
+                    <label for="txtright">Mã hóa đơn:</label>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <input
+                      type="text"
+                      name="invoicesId"
+                      id="invoicesId"
+                      placeholder="Nhập mã hóa đơn...Tự động sinh nếu không nhập..."
+                    />
+                  </div>
+
+                  <div class="col-12 col-s-12 padding-box">
+                    <label for="txtright">Mã khách hàng:</label>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <input
+                      type="text"
+                      name="userID"
+                      id="userID"
+                      placeholder="Nhập mã khách hàng"
+                    />
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <label for="txtright">Tổng tiền :</label>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <input
+                      type="text"
+                      name="totalcoins"
+                      id="totalcoins"
+                      placeholder="Nhập số tiền của hóa đơn"
+                    />
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <label for="txtright">Ngày Tạo hóa đơn:</label>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <input
+                      type="text"
+                      name="createDate"
+                      id="createDate"
+                      placeholder="Chọn ngày tạo hóa đơn"
+                    />
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <label for="txtright">Tình trạng hóa đơn:</label>
+                  </div>
+                  <div class="col-12 col-s-12 padding-box">
+                    <select name="condition" id="condition" class="from-select">
+                      <option selected disabled value="">Choose...</option>
+                      <option value="Chưa duyệt">Chưa duyệt</option>
+                      <option value="Đã duyệt">Đã duyệt</option>
+                    </select>
+                  </div>
+
+                  <button
+                    type="submit"
+                    id="btnSubmit"
+                    class="btn-form"
+                    style="background-color: rgba(44, 140, 15, 0.8)"
+                  >
+                    Submit
+                  </button>
+                  <button
+                    type="submit"
+                    id="btn__reload"
+                    class="btn-form"
+                    style="background-color: rgba(227, 32, 21, 0.8)"
+                  >
+                    Nhập mới
+                  </button>
+                  <hr />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-s-12 content">
+            <div class="tabcontent">
+              <div class="title">
+                <i class="fas fa-barcode"></i> Danh sách hóa đơn
+                <button style="margin-right: 3px">
+                  <i class="far fa-trash-alt"></i> Xóa chọn
+                </button>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col-10 col-s-12 padding-box">
+                  <input
+                    type="text"
+                    id="search-Invoices"
+                    placeholder="Nhập mã hóa đơn ..."
+                  />
+                </div>
+                <div class="col-2 col-s-12 padding-box">
+                  <button class="btnSeach">
+                    <i class="fas fas fa-search"></i> Tìm kiếm
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-s-12 padding-box">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th style="padding-top: 10px">
+                          <input type="checkbox" />
+                        </th>
+                        <th>Mã hóa đơn</th>
+                        <th>Mã khách hàng</th>
+                        <th>Tổng tiền</th>
+                        <th>Ngày tạo HD</th>
+                        <th>Tình trạng</th>
+                        <th>Thao tác</th>
+                      </tr>
+                    </thead>
+                    <tbody id="listProduct"></tbody>
+                    <tbody>
+                      <tr
+                        ng-repeat="x in listinvoices.data"
+                        class="invoicesitem"
+                        data-id="{{x.invoicesId}}"
+                      >
+                        <td style="text-align: center; padding-top: 10px">
+                          <input type="checkbox" value="" id="" />
+                        </td>
+                        <th
+                          style="
+                            width: 10%;
+                            max-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                          "
+                        >
+                          {{x.invoicesId}}
+                        </th>
+                        <th
+                          style="
+                            width: 10%;
+                            max-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                          "
+                        >
+                          {{x.userID}}
+                        </th>
+                        <th
+                          style="
+                            width: 10%;
+                            max-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                          "
+                        >
+                          {{x.totalcoins}}
+                        </th>
+                        <th
+                          style="
+                            width: 15%;
+                            max-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                          "
+                        >
+                          {{x.createDate}}
+                        </th>
+                        <th
+                          style="
+                            width: 15%;
+                            max-height: 48px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                          "
+                        >
+                          {{x.condition}}
+                        </th>
+                        <td style="text-align: center">
+                          <a
+                            href=""
+                            class="detailinvoices"
+                            data-id="{{x.invoicesId}}"
+                          >
+                            <i
+                              class="fa-solid fa-pen-to-square"
+                              title="Sửa"
+                            ></i>
+                          </a>
+                          <a
+                            href=""
+                            class="deleteinvoices"
+                            data-id="{{x.invoicesId}}"
+                          >
+                            <i class="fas fa-trash-alt" title="Xóa"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-12 col-s-12 padding-box">
+                  <div class="box-sum">
+                    <div class="box-left">
+                      Số lượng sản phẩm:
+                      <span id="soluong">{{listinvoices.totalItems}}</span>
+                    </div>
+                    <div class="box-right">
+                      <button class="btn-prev">
+                        <i class="fas fa-angle-left"></i>
+                      </button>
+
+                      <div class="navigation">
+                        <!-- <button data-id="1">1</button>
+                      <button data-id="2">2</button>
+                      <button data-id="3">3</button>
+                      <button data-id="4">4</button> -->
+                      </div>
+                      <button class="btn-next">
+                        <i class="fas fa-angle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay"></div>
+            <!-- List Lesson -->
+            <div class="Invoices_wrapper">
+              <h1 class="Invoices_heading">Chi tiết hóa đơn</h1>
+              <div class="btn btn-primary btn-exit-form">X</div>
+
+              <div class="search">
+                <div class="col-10 col-s-12 padding-box">
+                  <input
+                    type="text"
+                    class="input__text-seacher"
+                    placeholder="Nhập mã chi tiết hóa đơn..."
+                  />
+                </div>
+                <button class="btn btn-primary btn-search search-Invoices">
+                  <i class="fas fas fa-search"></i> Tìm kiếm
+                </button>
+              </div>
+              <div class="col-12 col-s-12 padding-box">
+                <div class="Invoices_list">
+                  <div class="row">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Mã khóa học</th>
+                          <th>Tiền khóa học</th>
+                          <th>Ngày chọn khóa học</th>
+                          <th>Thao tác</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr
+                          ng-repeat="x in listInvoicesDetail"
+                          class="Invoices-item"
+                        >
+                          <td>
+                            <div class="form-check">
+                              <input
+                                style="margin-left: 5px"
+                                type="checkbox"
+                                name="invoicesDetailId"
+                                class="from-check-input"
+                                value="{{x.invoicesDetailId}}"
+                              />
+                            </div>
+                          </td>
+                          <td
+                            style="
+                              width: 15%;
+                              max-height: 48px;
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                            "
+                          >
+                            <section
+                              contenteditable="false"
+                              name="courseID"
+                              class="view"
+                              data-src="{{x.courseID}}"
+                            >
+                              <!-- Loading... -->
+                              {{x.courseID}}
+                            </section>
+                          </td>
+                          <td>
+                            <section
+                              contenteditable="false"
+                              name="totalCourse"
+                              class="view"
+                              data-src="{{x.totalCourse}}"
+                            >
+                              <!-- Loading... -->
+                              {{x.totalCourse}}
+                            </section>
+                          </td>
+                          <td
+                            style="
+                              width: 15%;
+                              max-height: 48px;
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                            "
+                          >
+                            <section
+                              contenteditable="false"
+                              name="createDatedetail"
+                              class="view"
+                              data-src="{{x.createDatedetail}}"
+                            >
+                              <!-- Loading... -->
+                              {{x.createDatedetail}}
+                            </section>
+                          </td>
+                          <td style="text-align: center">
+                            <button
+                              href=""
+                              class="btn btn-link btn-delete-Invoices"
+                              data-id="{{x.invoicesDetailId}}"
+                            >
+                              Xóa
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- <tr>
+                                                    <td colspan='5' class='text-center'>Bạn chưa đăng khóa học nào.
+                                                    </td>
+                                                </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn btn-primary btn-create-Invoices">+</button>
+                  <button class="btn btn-primary btn-update-Invoices">
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

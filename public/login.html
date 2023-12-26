@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/login.css" />
+  </head>
+  <body>
+    <form name="login" action="">
+      <div class="container container--static">
+        <div class="info-box left">
+          <h2 class="heading">Don't have an account?</h2>
+          <p class="info-text">
+            Ethical celiac hashtag taxidermy squid. Wayfarers distillery
+            narwhal, kombucha jean shorts selvage meggings.
+          </p>
+          <button class="button button--signup">Sign up</button>
+        </div>
+        <div class="info-box right">
+          <h2 class="heading">Have an account?</h2>
+          <p class="info-text">
+            Ethical celiac hashtag taxidermy squid. Wayfarers distillery
+            narwhal, kombucha jean shorts selvage meggings.
+          </p>
+          <button type="button" class="button button--login">Login</button>
+        </div>
+      </div>
+      <div class="container container--sliding">
+        <div class="slider-content login">
+          <h2 class="heading alt">Log In</h2>
+          <form name="login" id="login">
+            <input
+              name="username"
+              class="email"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              name="password"
+              class="password"
+              type="password"
+              placeholder="Password"
+            />
+          </form>
+          <button
+            id="btn-login"
+            value="login"
+            type="button"
+            class="button button--login alt"
+          >
+            Log In
+          </button>
+          <p class="info-text alt"><a href="">Forgot password?</a></p>
+        </div>
+        <div class="slider-content signup">
+          <h2 class="heading alt">Sign Up</h2>
+          <form id="signup">
+            <input class="name" type="text" placeholder="Full Name" />
+            <input
+              class="email"
+              name="username"
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              class="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
+          </form>
+          <button type="button" name="signup" class="button button--signup alt">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+    <script type="module" src="../js/login.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@ import { formatNumber } from "../formData.js";
 function courseItem({ data }) {
   return html`
     <div
-      class="col l-2-4 course__index coures__active"
+      class="col l-2-4 m-5 course__index coures__active"
       href="/public/coursedetails.html?id={{x.courseID}}"
     >
       <div class="course__detail-hover-wrrap">

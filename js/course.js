@@ -153,7 +153,9 @@ function search() {
   const seachpress = document.querySelector(".seach__press");
   seachpress.addEventListener("click", function (event) {
     event.preventDefault();
-    location.assign("/public/searchs.html");
+    const inputSeach = document.querySelector(".seach__input-text").value;
+    // location.assign("/public/searchs.html");
+    window.location.href = "/public/searchs.html" + "?cs=" + inputSeach;
   });
 }
 
